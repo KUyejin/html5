@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이퍼링크(앵커)</title>
+    <!-- <link rel = "stylesheet" href ="reset.css"> -->
+    <style></style>
+</head>
+<body>
+    <h2>Hyperlink(anchor)</h2>
+    <!-- nav>ul>li*8>a{링크} -->
+    <nav>
+        <ul>
+            <li><a href="./ex1.html">내부문서</a></li> <!-- ./ 생략가능-->
+            <li><a href="http://naver.com" target="_blank">외부사이트</a></li> <!-- "_blank" -> 빈창에 네이버를 띄워라-->
+            <li><a href="#ft">푸터로 이동 - 네임앵커</a></li>
+            <li><a href="mailto:kooyj92@hanmail.net">이메일 보내기</a></li>
+            <li><a href="tel:010-9959-7512">전화 걸기</a></li>
+            <li><a href="sms:010-9959-7512">문자 보내기</a></li>
+            <li><a href="http://search.naver.com/search.naver?query=kuyejin">kuyejin 검색</a></li> 
+            <!--네이버 검색창에 검색할 내용을 query= 뒤에 쓴다-->
+            
+        </ul>
+    </nav>
+    <hr>
+    <div style ="min-height: 1500px; background-color: skyblue;"></div> <!--인라인 방식-->
+    <hr>
+    <footer id = "ft">
+        이 곳은 푸터<br>
+        <a href="#">위로 이동</a>
+    </footer>
+
+    
+</body>
+</html>
