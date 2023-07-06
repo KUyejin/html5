@@ -17,15 +17,27 @@
     <hr>
     
     <h3>오디오</h3>
-    <audio src="./sound/sample1.mp3" controls autoplay muted></audio>
+    <audio controls autoplay muted>
+        <source src = "./sound/ditto.mp3" type="audio/mp3">
+        <source src = "./sound/ditto.ogg" type="audio/ogg">
+        <source src = "./sound/ditto.wav" type="audio/wav">
+    </audio>
     <!-- autoplay muted: 링크를 클릭했을 때 자동플레이를 뮤트시킨다 -->
     <!-- controls : 제어바가 생성 -->
+    <!-- mp3,ogg,wav 쓴 이유: 크로스 브라우징 테스트 하려고(다른 브라우저에서 호환되는 지 테스트) -> 크롬에서 mp3만 실행된다.-->
     
     <hr>
     
     <h3>비디오</h3>
-    <video src="./movie/ditto.mp4" controls autoplay muted></video>
-
+    <video poster="./img/bentley.jpg" controls loop muted>
+        <source src="./movie/ditto.mp4" type="video/mp4">
+        <source src="./movie/ditto.ogv" type="video/ogg">
+        <source src="./movie/ditto.webm" type="video/webm">
+        <!-- mp4,ogv,webm 쓴 이유: 크로스 브라우징 테스트 하려고(다른 브라우저에서 호환되는 지 테스트) -> 크롬에서 1개만 실행된다.-->
+        <!--poster는 대기화면-->
+        <!--loop 반복-->
+    </video>
+    
     <hr>
     
     <h3>iframe 요소</h3>

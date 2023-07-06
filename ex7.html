@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 관련 태그</title>
+</head>
+<body>
+    <h1> 폼 관련 요소 </h1>
+
+    <!-- action은 보낼 서버 주소 -->
+    <!-- method: get은 보낼 모든 정보가 다 보임(a태그) / post는 정보가 보이지 않음 =>post로 보내야함(form태그) -->
+    <form action="" method="post">
+        <!-- for 사용하여 id적으면 마우스 커서가 id있는 곳으로 간다. -->
+        <!-- autofocus는 자동으로 커서가 위치된다 -->
+        
+        <label for = "id">아이디</label>
+        <input type="text" name="id" id="id" placeholder="아이디 입력" autofocus>
+       
+        <br><br>
+        
+        <label for = "name">이름</label>
+        <input type="text" name="name" id="name" placeholder="이름 입력" autofocus>
+
+        <br><br>
+
+        <label for = "pw">비밀번호</label>
+        <input type="password" name="pw" id="pw" placeholder="비밀번호 4글자 입력" autofocus>
+
+        <hr>
+
+        <!-- 서버로 보냄 -->
+        <input type="submit" value="등록"> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="다시 시작">
+
+    </form>
+
+
+    
+</body>
+</html>
